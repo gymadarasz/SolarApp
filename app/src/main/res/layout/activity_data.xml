@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_coin" />
+
+            <TextView
+                android:id="@+id/saved_money"
+                android:layout_width="88dp"
+                android:layout_height="45dp"
+                android:text="0.00"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/volt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 V"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="0 A"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/watts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="0 kW/s"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="Batería"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressbar_battery"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:layout_width="130dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/battery_porcent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="100%" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/plot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/data_button_background"
+            android:padding="30dp"
+            android:text="Gráficas"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/disconnect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/data_button_background"
+            android:padding="30dp"
+            android:text="Detener"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/get_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/data_button_background"
+            android:padding="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="Salir"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

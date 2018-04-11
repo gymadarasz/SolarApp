@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="restore_data_entries">
+        <item>Cada bimestre</item>
+        <item>Cada dos bimestres</item>
+    </string-array>
+    <string-array name="restore_data_values">
+        <item>2</item>
+        <item>4</item>
+    </string-array>
+</resources>

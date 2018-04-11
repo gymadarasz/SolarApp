@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO: EXTRACT THE EXPLICIT STRING RESOURCES TO IMPLICIT-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/activate_notification"
+        android:summary="Determine si desea ser notificado cuando se ahorre cierta cantidad de dinero"
+        android:title="Activar notificación" />
+    <com.kualimecatronica.mexoldroid.activity.settings.NumberPickerPreference
+        android:defaultValue="10"
+        android:key="@string/key_money"
+        android:summary="Selecciona el monto ahorrado para notificar"
+        android:title="Alerta de monto ahorrado" />
+    <com.kualimecatronica.mexoldroid.activity.settings.DatePickerPreference
+        android:key="cfe_pay_day"
+        android:title="Última fecha de pago de recibo de CFE"
+        android:defaultValue="2017-01-01"
+        android:summary="Summary"/>
+    <EditTextPreference
+        android:defaultValue="150"
+        android:inputType="numberDecimal"
+        android:key="key_kw_ticket"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="Introduzca su consumo en kWh del bimestre anterior"
+        android:title="Consumo anterior en kWh" />
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/restore_data_entries"
+        android:entryValues="@array/restore_data_values"
+        android:key="update_pref"
+        android:summary="Determine cada cuando desea restablecer los valores de ahorro y consumo"
+        android:title="Restablecimiento automático" />
+    <EditTextPreference
+        android:key="ip_key"
+        android:hint="kualimecatronica.net"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:summary="Establezca la dirección del servidor a conectar"
+        android:title="Dirección del servidor"/>
+    <EditTextPreference
+        android:key="port_key"
+        android:hint="10001"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:summary="Establezca el puerto de acceso al servidor"
+        android:title="Puerto de acceso"/>
+    <!--Restablecer cada bimestre o cads dos bimestres-->
+</PreferenceScreen>

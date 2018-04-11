@@ -1,0 +1,13 @@
+- Posibles errores del RobotDyn D1 R2 y como solucionarlos:
+
+* ERROR: No sube el sketch 
+CONSOLA:
+warning: espcomm_send_command: didn't receive command response
+warning: espcomm_send_command(FLASH_DOWNLOAD_BEGIN) failed
+
+Solucíón: Desconectar de alimentación, conectar directamente el pin D3 (GPIO 0 ESP8266) a tierra (GND)
+y subir de nuevo el sketch.
+
+más información: 
+https://github.com/esp8266/Arduino/issues/2604
+http://www.instructables.com/id/How-to-use-the-ESP8266-01-pins/?ALLSTEPS
